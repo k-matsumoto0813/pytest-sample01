@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# DB起動
-docker run \
-    -p 5432:5432 \
-    -e POSTGRES_DB=pytest \
-    -e POSTGRES_USER=testuser \
-    -e POSTGRES_PASSWORD=test \
-    postgres:11.6-alpine
