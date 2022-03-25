@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# build
+docker build \
+    -t shiota2021/pytest-sample01:202203 \
+    --build-arg http_proxy=http://proxygate2.nic.nec.co.jp:8080 \
+    --build-arg https_proxy=http://proxygate2.nic.nec.co.jp:8080 \
+    --build-arg DB_HOST=192.168.171.5 \
+    --build-arg DB_PORT=5432 \
+    --build-arg DB_NAME=pytest \
+    --build-arg DB_USER=testuser \
+    --build-arg DB_PASSWORD=test \
+    --no-cache \
+    .
