@@ -1,7 +1,7 @@
 import time
 import pytest
 # DELETE
-# import docker
+import docker
 from sqlalchemy import create_engine
 
 # ADD
